@@ -36,3 +36,283 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Navbar css */
+
+#navbar{
+  overflow:hidden;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding:8px;
+  align-items: center;
+  border-bottom:1px solid black;
+}
+
+#navLeft{
+  font-size:1.8rem;
+  color: #fb6680;
+  font-family: 'Cinzel', serif;
+  cursor: pointer;
+}
+
+#nav-menu{
+  display: flex;
+  flex-direction: row;
+}
+
+#nav-menu div{
+  margin:0px 15px;
+  width:200px;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.3s;
+}
+
+#nav-menu div:hover{
+  transform: scale(1.1);
+}
+
+
+#nav-menu li{
+  list-style: none;
+}
+
+#nav-menu li a{
+  text-decoration: none;
+  color:black;
+  font-size:1.3rem;
+  transition: 0.3s;
+  font-family: 'Roboto', sans-serif;
+}
+
+#nav-menu li a:hover{
+  color: #fb6680;
+}
+
+
+.navBtn{
+  width:150px;
+  height:35px;
+  border:none;
+  background-color: #fb6680;
+  color:white;
+  font-size:1.2rem;
+  transition:0.3s;
+  border-radius: 8px;
+  margin:0px 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.navBtn:hover{
+  background-color: #ff4564;
+  border-radius: 18px;
+}
+
+#hamburger{
+  display: none;
+}
+
+/* Hero section */
+
+.home-hero-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:35%;
+  margin:auto;
+  padding:10px;
+  text-align: center;
+}
+
+.home-hero-container h1{
+  font-family: 'Cinzel', serif;
+  font-size:2.5rem;
+}
+
+.home-hero-container h1 span{
+  color: #fb6680;
+}
+
+.home-hero-container p{
+  font-size:1.5rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn{
+  width:180px;
+  height:35px;
+  background-color: #fb6680;
+  color: white;
+  font-family:'Roboto', sans-serif ;
+  font-size:1.2rem;
+  border:none;
+  border-radius: 8px;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background-color: #ff4564;
+  border-radius: 15px;
+
+}
+
+/* Home brands css */
+
+.home-brands-container{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-brands-container h1{
+  font-family: 'Roboto', sans-serif;
+}
+
+.home-brand-outer-container{
+  margin: 0px 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width:60%;
+  justify-content: center;
+}
+
+.home-brand-item-container{
+  width:400px;
+  height:300px;
+  margin:15px 10px;
+  cursor: pointer;
+}
+
+.home-brand-item-container img{
+  width:100%;
+  height:100%;
+}
+
+
+/* Products page css */
+
+
+
+.products-child-container{
+  width:60%;
+  margin:auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.products-item-container{
+  border:2px solid #fb6680;
+  border-radius: 15px;
+  width:20%;
+  margin:15px 5px;
+  padding:10px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s;
+  align-items: center;
+  text-align: center;
+}
+
+.products-item-container p{
+  font-family: 'Roboto', sans-serif;
+  font-size:1.2rem;
+
+}
+
+.products-item-container:hover{
+  transform: scale(1.05);
+}
+
+.products-item-container img{
+  width:80%;
+  height:300px;
+}
+
+
+/* Cart css */
+
+
+
+
+.cart-child-container{
+  width:60%;
+  margin:auto;
+  padding:10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.cart-item-container{
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.cart-item-name{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+
+.cart-total-price{
+  display: flex;
+  align-items: center;
+}
+
+
+.cartBtn{
+  width:150px;
+  height:30px;
+  background-color: #fb6680;
+  color: white;
+  border:none;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 6px;
+  margin:15px 10px;
+  transition: 0.3s;
+}
+
+.cartBtn:hover{
+  background-color: #ff4564;
+  border-radius: 15px;
+}
+
+
+.emptyCart{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emptyCart h2{
+  font-family: 'Roboto', sans-serif;
+  font-size:2rem;
+}
+
+.qtyBtn{
+  background-color: #fb6680;
+  color: white;
+  border:none;
+  border-radius: 15px;
+  width:30px;
+  margin:0px 10px;
+  transition: 0.3s;
+}
+
+.qtyBtn:hover{
+  background-color: #ff4564;
+}
