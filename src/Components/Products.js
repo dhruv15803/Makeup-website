@@ -16,7 +16,7 @@ export const Products = (props) => {
             <img src={item.image_link} alt="" />
             <p>{item.name}</p>
             <p>{`$ ${item.price}`}</p>
-            <button className="btn" onClick={()=>props.addToCart(index)}>Add to cart</button>
+            <button className="productBtn" onClick={()=>props.addToCart(index)}>Add to cart</button>
         </div>
           }
           else{

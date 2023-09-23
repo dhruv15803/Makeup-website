@@ -58,29 +58,29 @@
   cursor: pointer;
 }
 
-#nav-menu{
+.nav-menu{
   display: flex;
   flex-direction: row;
 }
 
-#nav-menu div{
-  margin:0px 15px;
+.nav-menu div{
+  margin:10px 15px;
   width:200px;
   display: flex;
   justify-content: center;
   transition: transform 0.3s;
 }
 
-#nav-menu div:hover{
+.nav-menu div:hover{
   transform: scale(1.1);
 }
 
 
-#nav-menu li{
+.nav-menu li{
   list-style: none;
 }
 
-#nav-menu li a{
+.nav-menu li a{
   text-decoration: none;
   color:black;
   font-size:1.3rem;
@@ -88,7 +88,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
-#nav-menu li a:hover{
+.nav-menu li a:hover{
   color: #fb6680;
 }
 
@@ -112,9 +112,17 @@
   border-radius: 18px;
 }
 
+#navRight i{
+  display: none;
+}
+
 #hamburger{
   display: none;
 }
+
+
+
+
 
 /* Hero section */
 
@@ -236,6 +244,22 @@
   height:300px;
 }
 
+.productBtn{
+  width:60%;
+  height:30px;
+  background-color: #fb6680;
+  color: white;
+  border:none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.productBtn:hover{
+  background-color: #ff4564;
+  border-radius: 16px;
+}
+
+
 
 /* Cart css */
 
@@ -315,4 +339,62 @@
 
 .qtyBtn:hover{
   background-color: #ff4564;
+}
+
+
+@media (max-width:1200px){
+  #hamburger{
+    position: absolute;
+    display: block;
+    right:8px;
+    top:16px;
+  }
+  #navbar{
+    display: flex;
+    flex-direction: column;
+
+  }
+  #navRight button{
+    display: none;
+  }
+  #navRight i{
+    display: block;
+    position:absolute;
+    top:20px;
+    right:60px;
+  }
+  .nav-menu{
+    display: none;
+    flex-direction: column;
+  }
+
+  .active{
+    display: flex;
+  }
+
+
+  .products-child-container{
+
+    width:100%;
+  }
+}
+
+
+@media (max-width:800px){
+  .products-item-container{
+    width:40%;
+  }
+}
+
+
+@media (max-width:500px){
+  .products-item-container{
+    width:80%;
+  }
+
+  .products-item-container img{
+    width:70%;
+    height:50%;
+  }
+
 }
