@@ -12,6 +12,7 @@ export const Cart = () => {
         const temp = [...cart];
         temp.splice(index,1);
         setCart(temp);
+        window.location.reload();
     }
 
     const increment = (index)=>{
@@ -54,6 +55,7 @@ export const Cart = () => {
 
     const clearCart = ()=>{
         setCart([]);
+        window.location.reload();
     }
 
     useEffect(()=>{
